@@ -1,0 +1,16 @@
+{% load static %}
+<!-- Head -->
+{% include 'partials/_head.html' %}
+<!-- Navigation -->
+{% include 'partials/_nav.html' %}
+
+<div class="hero-wrap" style="background: #2f89fc; height: 110px;">
+    </div>
+    <h5 style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
+        You was searching for: {{ request.POST.type }} <br>
+        At: {{ request.POST.location }} <br>
+        We will let you know if there is something you are looking for. <br>
+    </h5>
+
+<!-- Footer -->
+{% include 'partials/_footer.html' %}

@@ -1,0 +1,15 @@
+{% load static %}
+<!-- Head -->
+{% include 'partials/_head.html' %}
+<!-- Navigation -->
+{% include 'partials/_nav.html' %}
+
+<div class="hero-wrap" style="background: #2f89fc; height: 110px;">
+    </div>
+    <h5 style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
+        Congratulations! <br>
+        Your e-mail address: {{ request.POST.email }} is now subscribed to our newsletter <br>
+    </h5>
+
+<!-- Footer -->
+{% include 'partials/_footer.html' %}
