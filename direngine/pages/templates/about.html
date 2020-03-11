@@ -1,9 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
-<!-- Head -->
-{% include 'partials/_head.html' %}
-<!-- Navigation -->
-{% include 'partials/_nav.html' %}
-
+{% block content %}
 <div class="hero-wrap js-fullheight" style="background-image: url({% static 'images/bg_2.jpg' %});">
     <div class="overlay"></div>
     <div class="container">
@@ -210,6 +207,4 @@
         </div>
     </div>
 </section>
-
-<!-- Footer -->
-{% include 'partials/_footer.html' %}
+{% endblock %}

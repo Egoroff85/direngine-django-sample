@@ -1,9 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
-<!-- Head -->
-{% include 'partials/_head.html' %}
-<!-- Navigation -->
-{% include 'partials/_nav.html' %}
-
+{% block content %}
 <div class="hero-wrap js-fullheight" style="background-image: url({% static 'images/bg_5.jpg' %});">
     <div class="overlay"></div>
     <div class="container">
@@ -45,10 +42,10 @@
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" name="date-from" id="checkin_date" class="form-control" placeholder="Date from">
+                                <input type="text" name="date_from" id="checkin_date" class="form-control" placeholder="Date from">
                             </div>
                             <div class="form-group">
-                                <input type="text" name="date-to" id="checkin_date" class="form-control" placeholder="Date to">
+                                <input type="text" name="date_to" id="checkin_date" class="form-control" placeholder="Date to">
                             </div>
                             <div class="form-group">
                                 <div class="range-slider">
@@ -339,6 +336,4 @@
         </div>
     </div>
 </section> <!-- .section -->
-
-<!-- Footer -->
-{% include 'partials/_footer.html' %}
+{% endblock %}
