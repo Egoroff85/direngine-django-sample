@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="hero-wrap" style="background: #2f89fc; height: 110px;">
+    </div>
+    <h5 style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
+        Thank you for contacting us! We received the following information from you: <br>
+        Your name: {{ request.POST.name }} <br>
+        Your e-mail: {{ request.POST.email }} <br>
+        Message subject: {{ request.POST.subject }} <br>
+        Your Message: {{ request.POST.message }} <br>
+        We will answer your message as soon as possible!
+    </h5>
+{% endblock %}

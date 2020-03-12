@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="hero-wrap" style="background: #2f89fc; height: 110px;">
+    </div>
+    <h5 style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
+        Congratulations! <br>
+        Your e-mail address: {{ request.POST.email }} is now subscribed to our newsletter <br>
+    </h5>
+{% endblock %}

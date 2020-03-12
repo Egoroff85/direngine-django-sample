@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="hero-wrap" style="background: #2f89fc; height: 110px;">
+    </div>
+    <h5 style="margin-top: 20px; margin-bottom: 20px; margin-left: 20px;">
+        Your are looking for the following hotel: <br>
+        Destination: {{ request.POST.destination }} <br>
+        Location: {{ request.POST.location }} <br>
+        Date From: {{ request.POST.date_from }} <br>
+        Date To: {{ request.POST.date_to }} <br>
+        We will let you know if we will find anything suitable for you!
+    </h5>
+{% endblock %}

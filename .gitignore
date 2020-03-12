@@ -127,3 +127,8 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Other
+.idea
+direngine/direngine/secrets.py
+**/.DS_Store
